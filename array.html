@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=   , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var info=[1001,"Mobile",29000,"Samsung"];//creation of array.
+       document.write("the product details are:"+info);
+       window.alert("the product details are:"+info);
+       console.log("the product details are:"+info);
+       document.write("<br>")
+       document.write(info[0]=362);//arrays are mutable in javascript.
+       document.write("<br>");
+       document.write(info);//updated array.
+       window.alert(info);
+       document.write("<br>");
+       info[4]="led";//adding elements to the array by add the index.
+       document.write("<br>");
+       document.write(info);
+       document.write("<br>");
+       document.write("the length of the array is:"+info.length);
+       //methods of the array
+       //1)push()=it adds the elements at the end of the original array and returns the length of the array.it can add only one element at a time.
+       c=info.push(25000);
+       document.write("<br>");
+       document.write(info);
+       document.write("<br>");
+       document.write(c);
+       //2)pop() by default it removes the last element of the array. only remove one element at a time. and the pop() stores thAT removed value.we can only remove the last element.
+       //3)unshift() it adds the element at the start of the array. at  time one element can be added. 
+       //4)shif() it removes the one element from the starting of the array. it can remove one element at a time.
+       document.write("<br>");
+       d=info.pop();
+       document.write(info);
+       document.write("<br>");
+       document.write(d);
+       document.write("<br>");
+       //5)indexOf() is used to find the index of the specific index of the element of the array. by passing the element name to the indexOf(). if that element is not then it returns -1.
+       //6)slice() there are only two attribute in the slice() they are start and stop values there is no step in the slice(). with the help of slice() we can access the whole array elements.
+       document.write("<br>");
+       document.write(info.slice(0,info.length));
+       document.write("<br>");
+       document.write("or");
+       document.write("<br>");
+       document.write(info.slice());
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function f1(name){
+        //     document.write("hello "+name+" good morning");
+        // }
+        // var x=window.prompt("enter the name:");
+        // f1(x);
+        //function with default arguments.
+        // function f2(name="srirama"){
+        //     document.write(name);
+        // }
+        // f2("krishna");
+        // f2();
+        //function with return values.
+        // function f3(){
+        //     return "krishna";
+        // }
+        // document.write(f3());
+        function f4(a,b){
+            return(a+b);
+            document.write("hi");//all the statements after the return keyword they won't be excecuted and also not raise any error.
+        }
+        var c,d;
+        c=parseInt(window.prompt("enter the value for c:"));
+        d=parseInt(window.prompt("enter the value for d:"));
+        window.alert(f4(c,d));
+    </script>
+</body>
+</html>

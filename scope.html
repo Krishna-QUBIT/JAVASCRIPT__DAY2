@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Global scope:-
+        var x=4;
+        function f1(){
+            document.write(x);
+        }
+        function f2(){
+            document.write("<br>");
+            document.write(x);
+        }
+        f1();
+        f2();
+        //local scope:-
+        function f3(){
+            document.write("<br>");
+            var y=10;
+        }
+        function f4(){
+            document.write("<br>");
+            document.write(y);//no output because it is not defined in f4(), it was defined in f3().
+        }
+        f3();
+        f4();
+    </script>
+</body>
+</html>
